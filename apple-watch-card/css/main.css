@@ -1,0 +1,72 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding-left: 60px;
+    padding-top: 60px;
+    font-family: "Montserrat", sans-serif;
+    line-height: normal;
+}
+
+.card {
+    padding: 20px 40px 50px;
+    width: 420px;
+    text-align: center;
+    border: 1px solid rgb(219, 185, 185);
+}
+
+.card-img {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    margin-bottom: 30px;
+    color: rgb(205, 38, 38);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-description {
+    padding: 0 5px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-description a {
+    color: rgb(205, 38, 38);
+    text-decoration: underline;
+}
+
+.card-price {
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.card-price span {
+    font-weight: 700;
+}
+
+.card-btn {
+    padding: 16px 42px 17px;
+    border-radius: 8px;
+    background-color: rgb(205, 38, 38);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+    transition:
+        background-color 0.2s ease-in,
+        color 0.2s ease-in;
+}
+
+.card-btn:hover,
+.card-btn:focus {
+    background-color: rgb(228, 25, 25);
+}
+
+.card-btn:active {
+    position: relative;
+    top: 1px;
+    background-color: rgb(142, 16, 16);
+    color: #F1C9C9;
+}

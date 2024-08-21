@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.header {
+
+    width: 900px;
+    padding: 40px;
+    background-color: #f0f8ff;
+}
+
+.nav {
+    margin: 20px 0;
+    padding: 20px 40px;
+    width: 900px;
+    background-color: #496883;
+}
+
+.nav a {
+    margin-right: 30px;
+    color: white;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+.nav a:last-child {
+    margin-right: 0;
+}
+
+.main {
+    padding: 40px;
+    margin: 20px 0;
+    width: 900px;
+    background-color: #dcebf0;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+.main article:last-child {
+    margin-bottom: 0;
+}
+
+/* отзыв */
+.feedback {
+    margin: 40px 0;
+    padding: 15px 40px;
+    border-left: 3px solid #f24137;
+    font-size: 18px;
+}
+
+.footer {
+    margin: 20px 0;
+    padding: 20px 40px;
+    width: 900px;
+    background-color: #1d3f5e;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
