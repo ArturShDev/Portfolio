@@ -66,4 +66,8 @@
     .card-description {
         margin-bottom: 10px;
     }
+
+    a.card-link {
+        font-size: 18px;
+    }
 }
