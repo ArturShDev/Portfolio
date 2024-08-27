@@ -15,7 +15,7 @@
 </head>
 
 <body class="sticky-footer">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
@@ -27,12 +27,20 @@
                     <li><a href="about.html">О компании</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
-                <button class="btn-mobile-nav" type="button">
-                    <img src="./img/icons/NAV-OPEN.svg" alt="open nav">
+                <button class="btn-mobile-nav" id="btn-mobile-nav" type="button">
+                    <img src="./img/icons/NAV-OPEN.svg" id="mobile-nav-img" alt="open nav">
                 </button>
             </nav>
         </div>
     </header>
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="tours.html">Туры</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
     <main class="main-page none">
         <div class="container">
             <section class="promo">
@@ -103,6 +111,8 @@
         </div>
 
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

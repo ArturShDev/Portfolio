@@ -27,6 +27,12 @@ body {
     width: 1px;
 }
 
+/* класс для боди в открытом мобильном меню */
+.no-scroll {
+    /* убирает вертикальный скролл у контейнера */
+    overflow-y: hidden;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -65,10 +71,16 @@ body {
 
 .header {
     padding: 40px 0;
+    position: relative;
+    z-index: 19;
 }
 
 .header-bg {
     background-color: #F6F6F6;
+}
+
+.header-white-bg {
+    background-color: #FFF !important;
 }
 
 .logo {
@@ -104,6 +116,35 @@ body {
 
 .btn-mobile-nav {
     display: none;
+}
+
+/*--- mobile-nav ---*/
+.mobile-nav {
+    z-index: 9;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6F6;
+
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.mobile-nav.open {
+    display: flex;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
 }
 
 .promo {
