@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-tablet.css">
+    <link rel="stylesheet" href="./css/media-mobile.css">
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
 
@@ -16,7 +18,7 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#!">
+                <a href="index.html" class="logo">
                     <img src="./img/LOGO.svg" alt="Логотип Эпик Тревел">
                 </a>
                 <ul class="nav-list">
@@ -25,6 +27,9 @@
                     <li><a href="about.html">О компании</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
+                <button class="btn-mobile-nav" type="button">
+                    <img src="./img/icons/NAV-OPEN.svg" alt="open nav">
+                </button>
             </nav>
         </div>
     </header>
@@ -40,9 +45,13 @@
             <div class="main-content">
                 <section class="content-row">
                     <div class="content-img">
-                        <!-- srcset для подключения картинки с более высоким разрешением для ретина -->
-                        <img src="./img/main/img-01.jpg" srcset="./img/main/img-01@2x.jpg 2x"
-                            alt="Популярные направления">
+                        <picture>
+                            <source srcset="./img/main/img-01-mobile.jpg, ./img/main/img-01-mobile@2x 2x.jpg"
+                                media="(max-width: 767px)">
+                            <!-- srcset для подключения картинки с более высоким разрешением для ретина -->
+                            <img src="./img/main/img-01.jpg" srcset="./img/main/img-01@2x.jpg 2x"
+                                alt="Популярные направления">
+                        </picture>
                     </div>
                     <div class="content-text">
                         <h2 class="title-1">
@@ -55,10 +64,15 @@
                         <p><a class="content-link" href="#!">Подробнее</a></p>
                     </div>
                 </section>
-                <section class="content-row content-row-reverse">
+                <section class="content-row content-row-reverse content-column-on-mobile">
                     <div class="content-img">
-                        <img src="./img/main/img-02.jpg" srcset="./img/main/img-02@2x.jpg 2x"
-                            alt="Впечатляющие маршруты">
+                        <picture>
+                            <source srcset="./img/main/img-02-mobile.jpg, ./img/main/img-02-mobile@2x 2x.jpg"
+                                media="(max-width: 767px)">
+                            <!-- srcset для подключения картинки с более высоким разрешением для ретина -->
+                            <img src="./img/main/img-02.jpg" srcset="./img/main/img-02@2x.jpg 2x"
+                                alt="Популярные направления">
+                        </picture>
                     </div>
                     <div class="content-text">
                         <h2 class="title-1">
@@ -78,7 +92,7 @@
         <div class="container">
             <div class="footer-row">
                 <address class="footer-copyrihgt">
-                    <p>2024 © ЭпикТрэвел. <br> Все права защищены</p>
+                    <p>2024 © ЭпикТрэвел. <br class="desktop-only"> Все права защищены</p>
                 </address>
                 <div class="footer-contacts">
                     <a href="tel:+79054561234" class="footer-phone">+7 (905) 456-12-34</a><br>

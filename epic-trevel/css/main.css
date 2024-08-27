@@ -71,6 +71,10 @@ body {
     background-color: #F6F6F6;
 }
 
+.logo {
+    flex-shrink: 0;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -98,6 +102,9 @@ body {
     color: #00CEB5;
 }
 
+.btn-mobile-nav {
+    display: none;
+}
 
 .promo {
     display: flex;
@@ -108,6 +115,7 @@ body {
     background-image: url('./../img/promo/promo-bg.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 40px;
     color: #fff;
 }

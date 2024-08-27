@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    .promo-title {
+        font-size: 34px;
+    }
+
+    .promo-text {
+        font-size: 14px;
+    }
+
+    .promo {
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .content-row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .title-1 {
+        font-size: 28px;
+    }
+
+    .content-column-on-mobile {
+        flex-direction: column !important;
+    }
+}
