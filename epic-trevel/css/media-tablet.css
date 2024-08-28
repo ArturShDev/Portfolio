@@ -70,4 +70,21 @@
         text-align: left;
     }
 
+    /* ---Tours--- */
+
+    .inner-page {
+        padding: 60px 0;
+    }
+
+    .inner-page-title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .cards-wrapper {
+        row-gap: 40px;
+    }
+
+    .card {
+        width: 354px;
+    }
 }
