@@ -96,4 +96,19 @@
     .article-content p {
         font-size: 16px;
     }
+
+    /* ---contacts--- */
+    .contacts-columns {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .address-wrapper {
+        gap: 40px;
+        width: 100%;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
 }

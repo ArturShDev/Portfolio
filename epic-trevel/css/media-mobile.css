@@ -45,6 +45,14 @@
         font-size: 28px;
     }
 
+    .title-2 {
+        font-size: 22px;
+    }
+
+    .title-3 {
+        font-size: 18px;
+    }
+
     .content-column-on-mobile {
         flex-direction: column !important;
     }
@@ -76,10 +84,20 @@
     }
 
     .article-content p+p {
-        margin-bottom: 14px;
+        margin-top: 14px;
     }
 
     .article-img {
         margin: 20px 0;
+    }
+
+    /* contacts */
+    .address-wrapper {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .form-wrapper {
+        padding: 20px 15px;
     }
 }
