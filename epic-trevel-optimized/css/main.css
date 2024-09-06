@@ -1,0 +1,517 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: normal;
+
+}
+
+.sticky-footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .none {
+    display: none !important;
+} */
+
+/* скрытие реальных импутов (real-radio) */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* класс для боди в открытом мобильном меню */
+.no-scroll {
+    /* убирает вертикальный скролл у контейнера */
+    overflow-y: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-about {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.title-1 span {
+    color: #81B4BD;
+}
+
+.title-2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title-3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header {
+    padding: 40px 0;
+    position: relative;
+    z-index: 19;
+}
+
+.header-bg {
+    background-color: #F6F6F6;
+}
+
+.header-white-bg {
+    background-color: #FFF !important;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* отступ безопасности */
+    gap: 30px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-list a {
+    color: #000;
+    transition: color 0.2s ease-in;
+    text-decoration: none;
+}
+
+.nav-list a.active {
+    color: #81B4BD;
+}
+
+.nav-list a:hover {
+    color: #00CEB5;
+}
+
+.btn-mobile-nav {
+    display: none;
+}
+
+/*--- mobile-nav ---*/
+.mobile-nav {
+    z-index: 9;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6F6;
+
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.mobile-nav.open {
+    display: flex;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    height: 500px;
+    background-color: #394D42;
+    background-image: url('./../img/promo/promo-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.promo-title {
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.promo-text {
+    font-size: 24px;
+}
+
+.main-content {
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.content-row {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.content-row.content-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.content-img {
+    /* определяет фактор сжатия flex-элемента. Flex-элементы будут заполнять контейнер в зависимости от значения flex-shrink */
+    flex-shrink: 0;
+    border-radius: 40px;
+    /* overflow определяет, необходимо ли для переполненного блочного элемента содержимое обрезать, предоставить полосы прокрутки или просто отобразить. */
+    overflow: hidden;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.content-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.content-text .content-link {
+    color: #81B4BD;
+    text-decoration-line: underline;
+}
+
+/* ---Tours--- */
+.inner-page {
+    padding: 90px 0;
+}
+
+.inner-page-title-wrapper {
+    margin-bottom: 60px;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+.card {
+    width: 370px;
+}
+
+.card .card-img {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.card-desc p {
+    line-height: 1.5;
+}
+
+.card-desc .card-link {
+    color: #81B4BD;
+    text-decoration: underline;
+}
+
+/* ---about--- */
+
+.article-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.article-content p+p {
+    margin-top: 30px;
+}
+
+.article-img {
+    margin: 40px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* contacts */
+.contacts-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    width: 600px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 5px 25px 0px rgba(211, 211, 211, 0.50);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    padding: 14px 20px;
+    border-radius: 2px;
+    border: 1px solid #B5DEE5;
+    background: #EFF9FB;
+    color: #36727D;
+}
+
+.input::placeholder {
+    color: #9ECCD4;
+}
+
+.input.input-50 {
+    flex: 1;
+}
+
+.radio-list,
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.radio-list label,
+.checkbox-list label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.radio-list label input,
+.checkbox-list label input {
+    flex-shrink: 0;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 12px 36px 13px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 6px;
+    background: #81B4BD;
+    box-shadow: 0px 8px 20px 0px rgba(129, 180, 189, 0.35);
+    transition: opacity 0.2s ease-in;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+.submit-btn:active {
+    opacity: 1;
+    background: #639199;
+}
+
+.address-wrapper {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.address-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fake-radio {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #EFF9FB;
+    border: 1px solid #B5DEE5;
+}
+
+.real-radio:checked+.fake-radio::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #37B6CC;
+
+    transition: all 0.2s ease-in;
+}
+
+.fake-radio::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #37B6CC;
+}
+
+.fake-checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 1px solid #B5DEE5;
+    background: #EFF9FB;
+}
+
+.fake-checkbox::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 16px;
+    height: 13px;
+    background-image: url(./../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.real-checkbox:checked+.fake-checkbox::after {
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.2s ease-in;
+}
+
+.yandex-map {
+    width: 100%;
+    height: 345px;
+}
+
+/* ---footer--- */
+.footer {
+    background-color: #111;
+    padding: 60px 0;
+    color: #FFF;
+    /* for sticky-footer */
+    margin-top: auto;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-copyrihgt {
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-contacts {
+    text-align: right;
+}
+
+.footer-phone {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer-contacts .footer-email {
+    margin-bottom: 10px;
+    color: #00BDA6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer-address {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* медиавыражения для устройств с высокой четкостью (ретина экраны) */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .promo {
+        background-image: url('./../img/promo/promo-bg@2x.jpg');
+    }
+}
