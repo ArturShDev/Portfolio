@@ -1,0 +1,38 @@
+// .benefits {
+// }
+
+.benefits__row {
+    display: flex;
+    column-gap: 30px;
+
+}
+.benefits__img {
+    flex: 1; // одинаковое изменение размера
+    text-align: center;
+}
+.benefits__desc {
+    flex: 1; // одинаковое изменение размера
+}
+.benefits__title {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.benefits__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2F2F2F;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+.benefits__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+// .benefits__item {
+// }

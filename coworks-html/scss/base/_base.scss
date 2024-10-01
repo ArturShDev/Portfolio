@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+a {
+    color: #00AE6C;
+    text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+    outline-offset: 1px;
+    outline: #005fcc auto 1px;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &--large {
+        width: 100%; // тянется на всю ширину экрана 
+        max-width: 1510px; // но ограничивается макимальное шириной
+
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+    margin-bottom: 120px;
+}
+.title-section {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #000;
+}

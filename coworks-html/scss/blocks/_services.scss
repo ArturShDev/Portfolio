@@ -1,0 +1,15 @@
+// .services {
+// }
+
+.services__title {
+    margin-bottom: 40px;
+    max-width: 570px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

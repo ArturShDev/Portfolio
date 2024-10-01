@@ -1,0 +1,27 @@
+.benefit {
+    display: flex;
+    column-gap: 30px;
+    align-items: flex-start;
+}
+
+.benefit__img {
+    flex-shrink: 0;
+}
+
+.benefit__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    color: #2f2f2f;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+.benefit__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+}

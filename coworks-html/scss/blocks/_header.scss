@@ -1,0 +1,14 @@
+.header {
+    padding: 40px 0;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header__logo {
+    flex-shrink: 0; // чтобы лого не сжимался 
+}

@@ -1,0 +1,18 @@
+// .locations {
+
+// }
+.locations__row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: flex-start;
+}
+.locations__title {
+    max-width: 430px;
+}
+
+.locations__controls {
+    display: flex;
+    column-gap: 20px;
+}
