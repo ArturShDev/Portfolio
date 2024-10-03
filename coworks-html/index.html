@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
     <title>Coworks - Коворкинг мечты</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
@@ -12,7 +13,7 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container--mobile-fluid">
             <div class="header__row">
                 <a href="#!" class="header__logo logo"><img src="./img/logo/CoWorks-logo.svg" alt="logo"></a>
 
@@ -22,12 +23,14 @@
                         <li class="nav__item"><a href="#!" class="nav__link">Сервис</a></li>
                         <li class="nav__item"><a href="#!" class="nav__link">Тарифы</a></li>
                         <li class="nav__item"><a href="#!" class="nav__link">Расположение</a></li>
-                        <li class="nav__item">
+                        <li class="nav__item visible-desktop">
                             <button class="btn-dark">Оставить заявку</button>
                         </li>
                     </ul>
                 </nav>
-
+                <button class="header__nav-btn">
+                    <img src="./img/icons/nav-btn-open.svg" alt="Open Nav">
+                </button>
             </div>
         </div>
     </header>
@@ -107,13 +110,15 @@
                     </div>
                     <div class="locations__controls">
                         <button>
-                            <img src="./img/icons/arrow-left.svg" alt="prev">
+                            <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="prev">
                         </button>
                         <button>
-                            <img src="./img/icons/arrow-right.svg" alt="next">
+                            <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="next">
                         </button>
                     </div>
                 </div>
+            </div>
+            <div class="container container--mobile-fluid">
                 <div class="slider">
                     <img src="./img/slider/slide-01.jpg" srcset="./img/slider/slide-01@2x.jpg 2x" alt="slide-01"
                         class="slider__img">
@@ -123,6 +128,17 @@
                         class="slider__img">
                 </div>
             </div>
+            <div class="container">
+                <div class="locations__controls locations__controls--mobile">
+                    <button>
+                        <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="prev">
+                    </button>
+                    <button>
+                        <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="next">
+                    </button>
+                </div>
+            </div>
+
         </section>
         <section class="services">
             <div class="container">
@@ -238,12 +254,12 @@
                                 22 990 ₽ / месяц
                             </div>
                             <ul class="card__list">
-                                <li class="card__list-item">Незакрепленное рабочее место</li>
+                                <li class="card__list-item">Закрепленное рабочее место</li>
                                 <li class="card__list-item">Скоростной безлимитный интернет</li>
                                 <li class="card__list-item">Монохромный принтер формата А4, сканер, копир</li>
                                 <li class="card__list-item">Чай, кофе, вода</li>
                                 <li class="card__list-item">Клиентское сопровождение</li>
-                                <li class="card__list-item">Без гостевых визитов</li>
+                                <li class="card__list-item">10 гостевых визитов в месяц</li>
                                 <li class="card__list-item">8 часов переговорной комнаты</li>
                                 <li class="card__list-item">скидка 30% на аренду переговорных</li>
                             </ul>

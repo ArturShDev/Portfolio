@@ -1,13 +1,15 @@
-// .locations {
-
-// }
 .locations__row {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
     align-items: flex-start;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
 }
+
 .locations__title {
     max-width: 430px;
 }
@@ -15,4 +17,29 @@
 .locations__controls {
     display: flex;
     column-gap: 20px;
+
+    @include tablet {
+        column-gap: 10px;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+        margin-top: 20px;
+
+
+        @include mobile {
+            display: block;
+        }
+    }
+}
+
+.locations__controls-img {
+    @include tablet {
+        width: 42px;
+        height: 42px;
+    }
 }

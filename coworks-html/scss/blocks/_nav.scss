@@ -6,9 +6,11 @@
     display: flex;
     column-gap: 40px;
     align-items: center;
-}
 
-// .nav__item {}
+    @include tablet {
+        column-gap: 20px;
+    }
+}
 
 .nav__link {
     color: black;

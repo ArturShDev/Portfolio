@@ -1,24 +1,38 @@
-// .benefits {
-// }
 
 .benefits__row {
     display: flex;
     column-gap: 30px;
 
 }
+
 .benefits__img {
     flex: 1; // одинаковое изменение размера
     text-align: center;
+
+    @include mobile {
+            display: none;
+    }
 }
+
 .benefits__desc {
     flex: 1; // одинаковое изменение размера
 }
+
 .benefits__title {
     margin-bottom: 10px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
+
+    @include tablet {
+        font-size: 26px;
+    }
+
+    @include mobile {
+        font-size: 24px;
+    }
 }
+
 .benefits__text {
     margin-bottom: 30px;
     font-size: 14px;
@@ -28,11 +42,14 @@
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
+
+    @include tablet {
+        margin-bottom: 20px;
+    }
 }
+
 .benefits__list {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
-// .benefits__item {
-// }

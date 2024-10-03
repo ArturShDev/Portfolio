@@ -2,8 +2,8 @@
     display: flex;
     column-gap: 40px;
     align-items: center;
+
+    @include mobile {
+        column-gap: 20px;
+    }
 }
-// .social-list__item {
-// }
-// .social-list__link {
-// }

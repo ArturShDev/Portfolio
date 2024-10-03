@@ -12,3 +12,14 @@
 .header__logo {
     flex-shrink: 0; // чтобы лого не сжимался 
 }
+.header__nav {
+    @include mobile {
+            display: none;
+    }
+}
+.header__nav-btn {
+    display: none;
+    @include mobile {
+            display: block;
+    }
+}
