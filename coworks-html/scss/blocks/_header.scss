@@ -1,5 +1,9 @@
 .header {
     padding: 40px 0;
+
+    @include mobile {
+        padding: 20px 0;
+    }
 }
 
 .header__row {
@@ -12,14 +16,17 @@
 .header__logo {
     flex-shrink: 0; // чтобы лого не сжимался 
 }
+
 .header__nav {
     @include mobile {
-            display: none;
+        display: none;
     }
 }
+
 .header__nav-btn {
     display: none;
+
     @include mobile {
-            display: block;
+        display: block;
     }
 }

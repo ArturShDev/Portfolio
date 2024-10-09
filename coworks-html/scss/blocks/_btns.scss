@@ -8,9 +8,14 @@ a.btn-dark {
     font-weight: 700;
     color: #fff;
     transition: all 0.2s ease-in;
+    text-align: center;
 
     &:hover {
         background-color: #333;
+    }
+
+    &--wide {
+        width: 100%;
     }
 }
 

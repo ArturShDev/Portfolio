@@ -18,9 +18,19 @@
             width: 100% !important; 
         }
     }
+    &--tablet-fluid {
+        @include tablet {
+            width: auto;
+        }
+    }
     &--mobile-fluid {
         @include mobile {
             width: auto;
         }
     }
+
+    &--mobile-no-padding {
+        padding: 0;
+    }
+
 }

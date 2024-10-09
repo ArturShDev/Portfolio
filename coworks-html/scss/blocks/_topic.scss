@@ -33,6 +33,23 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 30px;
+
+    &:hover:not(:focus-visible) {
+        opacity: 0.5;
+    }
+
+    &:active:not(:focus-visible) .topic__title {
+        color: #00ae6c;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline-offset: 1px;
+        outline: #005fcc auto 1px;
+    }
 }
 
 .topic__icon {
@@ -44,12 +61,14 @@
 
 
 .topic__content {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
+
     line-height: 1.5;
-    display: none;
+
+    // плавное раскрытие 
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+
 
     @include mobile {
         font-size: 14px;
@@ -57,6 +76,10 @@
     }
 }
 
-.topic__content--open {
-    display: flex;
+.topic__content-padding {
+    padding-top: 30px;
+
+    p+p {
+        margin-top: 1em;
+    }
 }

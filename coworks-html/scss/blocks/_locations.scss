@@ -1,3 +1,7 @@
+.locations {
+   @include scrollTopMargin;
+}
+
 .locations__row {
     margin-bottom: 40px;
     display: flex;
